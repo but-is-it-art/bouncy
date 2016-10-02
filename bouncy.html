@@ -26,7 +26,7 @@ function draw(){
   console.log ("draw", y, speed)
 
   if (y >= floor && speed > 0) {
-    speed =- speed
+    speed = -(speed*0.95-1)
   }
   else {
     y = y + speed
